@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas & Frutos</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--BootStrap V 4.3-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Cabecalho-->
+    <header>
+        <!--Barra de Navegacao-->
+        <nav class="fonte-navbar navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                Frutas & Frutos
+            </a>
+            <!--Botao Hamburguer-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Itens Navbar-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#receitas">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos">Quem somos</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Corpo-->
+    <main>
+        <!--Carousel-->
+        <section>
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <!--Indicadores-->
+                    <ol class="carousel-indicators">
+                        <!--3 indicadores, do 0 ao 2-->
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>                    
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!--Slide 01-->
+                        <div class="carousel-item active">
+                            <!--Imagem 01-->
+                            <img src="Imagens/Imagem01.jpg" class="d-block w-100 imagem-carousel" alt="Imagem 01">
+                            <div class="carousel-caption d-none d-md-block h-75">
+                                    <!--Conteudo Caroulseu-->
+                                    <h1 class="fonte-carousel display-3">Reaproveite melhor os alimentos.</h1>
+                            </div>
+                        </div>                                        
+                        <!--Slide 02-->
+                        <div class="carousel-item">
+                            <!--Imagem 02-->
+                            <img src="Imagens/Imagem02.jpg" class="d-block w-100 imagem-carousel" alt="Imagem 02">
+                                <div class="carousel-caption d-none d-md-block h-75">
+                                    <!--Conteudo Caroulseu-->
+                                    <h1 class="fonte-carousel display-3">Economize e ganhe em saúde!</h1>
+                                </div>
+                        </div>
+                        <!--Slide 03-->
+                        <div class="carousel-item">
+                            <!--Imagem 03-->
+                            <img src="Imagens/Imagem03.jpg" class="d-block w-100 imagem-carousel" alt="Imagem 02">
+                                <div class="carousel-caption d-none d-md-block h-75">
+                                    <!--Conteudo Caroulseu-->
+                                    <h1 class="fonte-carousel display-3">Frutas fresquinhas para você!</h1>
+                                </div>
+                        </div>
+                    </div>
+                    <!--Botao Lateral Para Imagem Anterior-->
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <!--Botao Lateral Para Proxima Imagem-->
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>  
+        </section>
+        <!--Conteudo/Apresentacao-->
+        <section>
+            <h1 class="text-center cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
+            <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
+        </section>  
+        <!--Receitas-->        
+        <section id="receitas" class="container-fluid bg-light  ">
+            <!--Definindo o container como Row-->
+            <div class="row justify-content-center">
+                <!--Card-Receita-01-->
+                <article id="card-style"class="card p-0 m-4 col-12 col-md-3">
+                    <img class="card-img-top card-imagem" src="Imagens/imagem-card01.jpg" alt="Salada de Abacate">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigela de salada de Abacate</h3>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+                        <!--Botao Abrir Modal-->
+                        <button href="#" class="btn" id="botao-style"data-toggle="modal" data-target="#Modal-01">Veja a Receita</button>
+                    </div>
+                    <!-- Modal 01-->
+                    <div class="modal fade" id="Modal-01" tabindex="-1" role="dialog" aria-labelledby="Modal-Receita" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <!--Conteudo do Modal-->
+                            <div class="modal-content">
+                                <!--Cabecalho do Modal-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal-Receita">Receita Salada de Abacate</h5>
+                                </div>
+                                <!--Corpo do Modal-->
+                                <div class="modal-body">
+                                    <h1>Ingredientes:</h1>
+                                    <ul>
+                                        <li>2 abacates pequenos cortados em cubos;</li>
+                                        <li>1 cebola picada;</li>
+                                        <li>1 pimentão verde picado;</li>
+                                        <li>1 tomate grande maduro picado;</li>
+                                        <li>1/4 de xícara de coentro fresco picado;</li>
+                                        <li>suco de 1/2 limão;</li>
+                                        <li>sal a gosto;</li>
+                                        <li>pimenta-do-reino moída a gosto.</li>
+                                    </ul>
+                                    <h2>Modo de Preparo:</h2>
+                                    <ol>
+                                        <li>Descasque e tire os caroços dos abacates.</li>
+                                        <li>Pique em cubos e misture com os outros ingredientes em uma saladeira temperando com sal, limão e pimenta do reino.</li>
+                                        <li>Leve para gelar até a hora de servir.</li>
+                                    </ol>                           
+                                </div>
+                                <!--Rodape do Modal-->
+                                <div class="modal-footer">
+                                    <!--Botao Fechar Modal-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </article>  
+                <!--Card-Receita-02-->
+                <article id="card-style"class="card p-0 m-4 col-12 col-md-3">
+                    <img class="card-img-top card-imagem" src="Imagens/imagem-card02.jpg" alt="Salada de Kiwi">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigela de salada de Kiwi</h3>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+                        <!--Botao Abrir Modal-->
+                        <button href="#" class="btn" id="botao-style"data-toggle="modal" data-target="#Modal-02">Veja a Receita</button>
+                    </div>
+                    <!-- Modal 02-->
+                    <div class="modal fade" id="Modal-02" tabindex="-1" role="dialog" aria-labelledby="Modal-Receita" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <!--Conteudo do Modal-->
+                            <div class="modal-content">
+                                <!--Cabecalho do Modal-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal-Receita">Receita Salada de Kiwi</h5>
+                                </div>
+                                <!--Corpo do Modal-->
+                                <div class="modal-body">
+                                    <h1>Ingredientes:</h1>
+                                    <ul>
+                                        <li>1 unidade de kiwi;</li>
+                                        <li>100 gramas de rúcula;</li>
+                                        <li>8 gramas de amêndoas;</li>
+                                        <li>1 colher de sopa de sementes de girassol;</li>
+                                        <li>2 colheres de sopa de azeite de oliva;</li>
+                                        <li>1 unidade de limão;</li>
+                                        <li>1 pitada de sal;</li>
+                                        <li>1 pitada de açúcar (opcional).</li>
+
+                                    </ul>
+                                    <h2>Modo de Preparo:</h2>
+                                    <ol>
+                                        <li>Descasque e corte o kiwi em rodelas finas.</li>
+                                        <li>Para que seja mais fácil descascar, corte os topos e use uma colher para separar a polpa da pele.</li>
+                                        <li>Prepare a salada colocando em uma tigela a rúcula lavada cortada em pedaços e os restantes ingredientes com exceção das amêndoas, que reservamos para decoração.</li>
+                                        <li>Misture tudo e sirva esses ingredientes com o kiwi e as amêndoas picadas.</li>
+                                        <li>Você pode comer esta salada verde com kiwi como uma refeição leve ou acompanhamento de outras receitas saudáveis, como frango defumado ou truta assada. Bom apetite!</li>
+                                    </ol>
+                                </div>
+                                <!--Rodape do Modal-->
+                                <div class="modal-footer">
+                                    <!--Botao Fechar Modal-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>  
+                <!--Card-Receita-03-->      
+                <article id="card-style"class="card p-0 m-4 col-12 col-md-3">
+                    <img class="card-img-top card-imagem" src="Imagens/imagem-card03.jpg" alt="Salada de Frutas">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigela de salada de Frutas</h3>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+                        <!--Botao Abrir Modal-->
+                        <button href="#" class="btn" id="botao-style" data-toggle="modal" data-target="#Modal-03">Veja a Receita</button>
+                    </div>
+                    <!-- Modal 03-->
+                    <div class="modal fade" id="Modal-03" tabindex="-1" role="dialog" aria-labelledby="Modal-Receita" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <!--Conteudo do Modal-->
+                            <div class="modal-content">
+                                <!--Cabecalho do Modal-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal-Receita">Receita</h5>
+                                </div>
+                                <!--Corpo do Modal-->
+                                <div class="modal-body">
+                                    <h1>Ingredientes:</h1>
+                                    <ul>
+                                        <li>1/2 lata de creme de leite;</li>
+                                        <li>1/2 lata de leite condensado;</li>
+                                        <li>5 Bananas;</li>
+                                        <li>4 Laranjas;</li>
+                                        <li>2 Maçãs;</li>
+                                        <li>1/2 Mamão papaia;</li>
+                                        <li>2 Colheres de suco de limão;</li>
+                                        <li>Açucar a gosto.</li>
+
+                                    </ul>
+                                    <h2>Modo de Preparo:</h2>
+                                        <ol>
+                                            <li>Lave e corte as frutas em tamanho pequeno.</li>
+                                            <li>Adicione o leite condensado, creme de leite, o suco de limão e o açúcar a gosto.</li>
+                                            <li>Mexa bem e leve a geladeira por no mínimo 15 minutos.</li>
+                                            <li>Sirva gelado.</li>
+                                            <li>Obs: Pode ser usado outras frutas de sua preferência.</li>
+                                
+                                        </ol>
+                                    <!--Rodape do Modal-->
+                                </div>
+                                <div class="modal-footer">
+                                    <!--Botao Fechar Modal-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>    
+                <!--Card-Receita-04-->
+                <article id="card-style"class="card p-0 m-4 col-12 col-md-3">
+                    <img class="card-img-top card-imagem" src="Imagens/imagem-card04.jpg" alt="Salada de Frutas">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigela de salada de Frutas</h3>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+                        <!--Botao Abrir Modal-->
+                        <button href="#" class="btn" id="botao-style" data-toggle="modal" data-target="#Modal-04">Veja a Receita</button>
+                    </div>
+                    <!-- Modal 04 -->
+                    <div class="modal fade" id="Modal-04" tabindex="-1" role="dialog" aria-labelledby="Modal-Receita" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <!--Conteudo do Modal-->
+                            <div class="modal-content">
+                                <!--Cabecalho do Modal-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal-Receita">Receita</h5>
+                                </div>
+                                <!--Corpo do Modal-->
+                                <div class="modal-body">
+                                    <h1>Ingredientes:</h1>
+                                    <ul>
+                                        <h3>Salada de Frutas</h3>
+                                        <li>Frutas de sua preferência (morango, maçã, kiwi, manga, mamão, pêra, melancia etc);</li>
+                                        <li>1 copo de suco de laranja ou o caldo (suco) da melancia;</li>
+                                        <h3>Creme de Limão</h3>
+                                        <li>1 lata de leite condensado;</li>
+                                        <li>Suco de 2 limões grandes (ou se não tiver coloque 4 limões pequenos);</li>
+                                    </ul>
+                                    <h2>Modo de Preparo:</h2>
+                                    <p>
+                                        <ol>
+                                            <li>Corte as frutas em quadradinhos e misture ao suco de laranja.</li>
+                                            <li>Junte o leite condensado ao suco de limão e leve ao fogo até ferver, ou se preferir bata no liquidificador e coloque na geladeira.</li>
+                                            <li>Depois de pronto, misture esse creme às frutas. Sirva gelado.</li>
+                                            <li>Sirva gelado.</li>
+                                            <li>Dica: o caldo que eu falo é o suco que solta da melancia quando ela descongela.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                                <!--Rodape do Modal-->
+                                <div class="modal-footer">
+                                    <!--Botao Fechar Modal-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>   
+                <!--Card-Receita-05-->     
+                <article id="card-style"class="card p-0 m-4 col-12 col-md-3">
+                    <img class="card-img-top card-imagem" src="Imagens/imagem-card05.jpg" alt="Salada de Maçã">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigela de salada de Maçã</h3>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+                        <!--Botao Abrir Modal-->
+                        <button href="#" class="btn" id="botao-style" data-toggle="modal" data-target="#Modal-05">Veja a Receita</button>
+                    </div>
+                    <!-- Modal 05-->
+                    <div class="modal fade" id="Modal-05" tabindex="-1" role="dialog" aria-labelledby="Modal-Receita" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <!--Conteudo do Modal-->
+                            <div class="modal-content">
+                                <!--Cabecalho do Modal-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal-Receita">Receita</h5>
+                                </div>
+                                <!--Corpo do Modal-->
+                                <div class="modal-body">
+                                    <h1>Ingredientes:</h1>
+                                    <ul>
+                                        <li>2 Xícaras de tomates cereja cortados ao meio;</li>
+                                        <li>1 Xícara de queijo minas frescal light cortado em cubos;</li>
+                                        <li>1 Maçã pequena com casca picada em cubos;</li>
+                                        <li>Cheiro-verde picado a gosto;</li>
+                                        <li>Suco de 1 limão;</li>
+                                        <li>Azeite de oliva a gosto;</li>
+                                        <li>Sal a gosto.</li>
+                                    </ul>
+                                    <h2>Modo de Preparo:</h2>
+                                    <ol>
+                                        <li>Lave os tomatinhos e corte ao meio.</li>
+                                        <li>Corte o queijo em cubos.</li>
+                                        <li>Corte a maçã em cubos e deixe de molho no suco de limão para não escurecer.</li>
+                                        <li>Pique o cheiro verde lavado.</li>
+                                        <li>Misture todos os ingredientes da salada, acrescente azeite e tempere com sal.</li>
+                                        <li>Sirva em seguida.</li>
+                                    </ol>
+                                </div>
+                                <!--Rodape do Modal-->
+                                <div class="modal-footer">
+                                    <!--Botao Fechar Modal-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article> 
+                <!--Card-Receita-06-->       
+                <article id="card-style"class="card p-0 m-4 col-12 col-md-3">
+                    <img class="card-img-top card-imagem" src="Imagens/imagem-card06.jpg" alt="Salada de Kiwi + Açai">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigela de salada de Kiwi + Açai</h3>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+                        <!--Botao Abrir Modal-->
+                        <button href="#" class="btn" id="botao-style" data-toggle="modal" data-target="#Modal-06">Veja a Receita</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal-06" tabindex="-1" role="dialog" aria-labelledby="Modal-Receita" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <!--Conteudo do Modal-->
+                            <div class="modal-content">
+                                <!--Cabecalho do Modal-->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal-Receita">Receita</h5>
+                                </div>
+                                <!--Corpo do Modal-->
+                                <div class="modal-body">
+                                    <h1>Ingredientes:</h1>
+                                    <ul>
+                                        <li>Banana nanica (a gosto);</li>
+                                        <li>Morango (a gosto);</li>
+                                        <li>Manga (a gosto);</li>
+                                        <li>Abacaxi (a gosto);</li>
+                                        <li>Kiwi (a gosto);</li>
+                                        <li>3 ou 4 colheres da polpa de açaí;</li>
+                                    </ul>
+                                    <h2>Modo de Preparo:</h2>
+                                    <ol>
+                                        <li>Em um potinho, coloque as colheres da polpa de açaí e cubra com as frutinhas a gosto.</li>
+                                        <li>Uma opção deliciosa é jogar por cima um punhado de granola!.</li>
+                                        <li>Sirva em seguida.</li>
+                                    </ol>
+                                </div>
+                                <!--Rodape do Modal-->  
+                                <div class="modal-footer">
+                                    <!--Botao Fechar Modal-->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </article>     
+                </div>               
+        </section>
+        <!--Contato-->
+        <section>
+            <!-- Modal Contato-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!--Conteudo do Modal-->
+                    <div class="modal-content">
+                        <!--Cabecalho do Modal-->
+                        <div class="modal-header">
+                            <!--Titulo do Modal-->
+                            <h5 class="modal-title" id="exampleModalLabel">Contato</h5>                          
+                        </div>
+                        <!--Corpo do Modal-->
+                        <div class="modal-body">
+                            <!--Formulario-->
+                            <form>
+                                <div class="form-group">
+                                    <!--Label Nome-->
+                                    <label for="input-nome">Nome Completo</label>
+                                    <input type="text" class="form-control" id="input-nome" placeholder="Insira seu Nome Completo">                                  
+                                    <!--Label Email-->
+                                    <label for="input-email">Insira aqui seu E-mail</label>
+                                    <input type="email" class="form-control" id="input-email"placeholder="Enter email">                                  
+                                    <!--Input Mensagem-->
+                                    <label for="textarea-mensagem">Envie-nos uma mensagem</label>
+                                    <textarea class="form-control" id="textarea-mensagem" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Rodape do Modal-->
+                    <div class="modal-footer">
+                        <!--Botao Enviar-->
+                        <button type="button" class="btn" id="botao-style"data-dismiss="modal">Enviar</button>
+                        <!--Botao Fechar-->
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <!--Rodape-->
+    <footer>
+        <section id="quem-somos">
+            <p class="Copyright">Minhas Redes Sociais:</p>
+            <a href="https://www.linkedin.com/in/jonathan-henrique-1b4a69144/" target="_blank">
+                <img src="Imagens/linkedin.png" alt="linkedinLogo" class="logoRodape">
+            </a>
+            <a href="http://github.com/henrithanN"target="_blank">            
+                <img src="Imagens/github.png" alt="githubLogo" class="logoRodape">
+            </a>
+        </section>        
+    </footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

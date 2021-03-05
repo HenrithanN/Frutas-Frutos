@@ -1,0 +1,55 @@
+/*Cabecalho*/
+.fonte-navbar{
+    font-family: 'Pacifico', cursive; /*Aplicando a Fonte Pacifico*/
+}
+.cor-especial{
+    color: darkred; /*Aplicando a cor vermelho escuro*/
+}
+/*Conteudo*/
+
+/*Carousel*/
+.imagem-carousel{
+    object-fit: cover;       /* Imagem vai preencher o Carousel, sem distorcer*/
+    object-position: 0 70%;  /*Mover a Imagem eixo X(0) e eixo Y(80%)*/
+    height: 400px;           /*Altura da Imagem*/
+}
+.fonte-carousel{
+    font-family: 'Pacifico', cursive; /*Aplicando a Fonte Pacifico*/
+}
+/*Cards*/
+.card-imagem{
+    object-fit: cover;/* Imagem vai preencher o card, sem distorcer*/
+    height: 200px; /*Altura da imagem*/
+}
+#card-style{
+    border:2px solid darkred; /*Borda do card com 2pixels, formato solido e vermelha*/
+}
+/*Botoes*/
+#botao-style{
+    background-color: darkred; /*Alterando a cor do botao*/
+    color: white;      /*Alterando cor do texto do botao*/
+}
+/*Rodape*/
+
+footer{
+    text-align: center;     /*Texto Alinhado no Centro*/
+    background: darkred;  /*Cor de fundo vemelho escuro*/
+}
+
+.Copyright{                 
+    color: white;         /*Cor do texto Branca*/
+    font-size: 20px;        /*Tamanho da fonte 20px*/
+    margin-top: 20px;       /*20px de Margem para o topo*/
+}
+
+.logoRodape{                /*Tamanho dos logos e espaçamento*/
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logoRodape:hover{          /*Efeitos ao passar o mouse por cima*/
+    margin-bottom: 10px;    /*Tera uma margem de 10px para baixo*/ 
+    margin-left: 10px;      /*Tera uma margem de 10px para a esquerda*/
+    margin-right: 10px;     /*Tera uma margem de 10px pra direita*/
+    transform: scale(1.5);  /*Aumentara de tamanho*/
+}
